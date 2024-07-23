@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio of Riya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="port.css">
+  <link rel="stylesheet" href="mobile.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="title">
+    <span class="TITLE">Riya's Portfolio</span>
+    <button onclick="document.getElementById('aboutme').scrollIntoView({behavior: 'smooth'});">About Me</button>
+    <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'});">Projects</button>
+    <button onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'});">Skills</button>
+    <button onclick="document.getElementById('contacts').scrollIntoView({behavior: 'smooth'});">Contacts</button>
+  </div>
+
+  <div class="container">
+    <div class="photo-container">
+      <img src="RIYA.jpg" alt="Profile Photo">
+      <div class="icon-container">
+        <a class="links" href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="links" href="https://www.instagram.com/nagareriyababasaheb?igsh=cmY3a2V0a210ZzVj" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div align="center" id="aboutme" class="heading">About me</div>
+      <p> I am a very enthusiastic and hardworking person with a bit of creativity in me. Currently, I am studying as a sophomore at IIT Gandhinagar as an electrical engineering student. I am interested in digital design as my hobby and pursuing it very enthusiastically. As a first year, I was a junior marketing team member of Amalthea and also a core member of Palette. In the academic area, I got the opportunity to lead a team of 30 people through the world of engineering.</p>
+    </div>
+    </div>
+
+  <div class="content">
+    <div align="center" id="projects" class="heading">Projects</div>
+    <p>Given below are a few projects done by me. You can get a broad description of them from below. These projects were done in the first year of BTech and were done for the two courses: World of Engineering and Design Innovation and Prototyping.</p>
+    <ol class="lists">
+        <li class="l">
+          <div class="child1">
+            <div class="child2">
+              <img class="image" src="gimbal umbrella.jpg" alt="Gimbal Umbrella">
+              <h1>Gimbal Umbrella</h1>
+              <p class="child3" id="para">This project was done under the WOE course.</p>
+              <div class="child">
+                <a href="https://www.canva.com/design/DAF1Aq5NKJo/P3tyq6vKnuoZVKRMkOEyOg/edit?utm_content=DAF1Aq5NKJo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                  <button class="red">Read More</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="l">
+          <div class="child1">
+            <div class="child2">
+              <img class="image" src="cap1.jpg" alt="Alert Guard">
+              <h1>Alert Guard</h1>
+              <p class="child3" id="para">This project was done under the Design course.</p>
+              <div class="child">
+                  <a href="https://www.canva.com/design/DAGLqCUdVoQ/mHEETkM3UdbNKXiFsse7wA/edit?utm_content=DAGLqCUdVoQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                      <button class="red">Read More</button>
+                    </a>
+                </div>
+              </div>
+            </div>
+        </li>
+      </ol>
+    <div align="center" id="skills" class="heading card">Skills</div>
+    <ul class="lists">
+      <li>I have nice design skills and can make a fine design using Canva.</li>
+      <li>I am somewhat familiar with web development by making this portfolio.</li>
+      <li>I know basic Python, Java, and C++.</li>
+    </ul>
+    <div id="contacts">
+      <div class="heading" align="center">Contacts</div>
+      <p class="contactsinfo"><i class="fa-solid fa-phone"></i> Phone: +919922531082</p>
+      <span class="contactsinfo"><i class="fa-solid fa-envelope"></i> Email: 23110214@iitgn.ac.in</span>
+      <br />
+      <span onclick="gfg(1)" class="star">★</span>
+      <span onclick="gfg(2)" class="star">★</span>
+      <span onclick="gfg(3)" class="star">★</span>
+      <span onclick="gfg(4)" class="star">★</span>
+      <span onclick="gfg(5)" class="star">★</span>
+      <h3 id="output">Rating is: 0/5</h3>
+    </div>
+  </div>
+
+  <script src="star.js"></script>
+</body>
+</html>

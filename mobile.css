@@ -1,0 +1,230 @@
+@media only screen and (max-width: 600px){
+    body{
+        background-color: #EEEEEE;
+      }
+      .title{
+        background-color: #201E43;
+        padding: 20px;
+        text-align: right;
+        position: relative;
+        top: 0;
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-size: 20px;
+        color: #EEEEEE;
+      }
+      .heading{
+        font-size: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin: 30px;
+      }
+      .Riya_img{
+        float: left;
+        padding: 10px;
+      }
+      .TITLE{
+        float: left;
+        font-size: 30px;
+      }
+      p{
+        padding: 5px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      button{
+        background-color: #EEEEEE;
+        border: 2px solid #134B70;
+      }
+      .lists{
+        font-family: 'Times New Roman', Times, serif;
+      }
+      #contacts{
+        background-color: #201E43;
+        margin:0px;
+        color: #EEEEEE;
+        padding: 20px;
+      }
+      .contactsinfo{
+        background-color: #201E43;
+        margin:0px;
+        padding: 0px;
+        color: #EEEEEE;
+      }
+      .child1 {
+        height: 90vh;
+        background-color:#508C9B;
+        width: 40vw;
+        left: 30vw;
+      }
+    
+      .child2 {
+        height: 80vh;
+        width: 30vw;
+        background-color: white;
+        position: relative;
+        top: 5vh;
+        left: 5vw;
+        border-radius: 10px;
+      }
+      .child{
+        text-align: center;
+    
+      }
+    
+      .image {
+        width: 28vw;
+        height: 34vh;
+        position: relative;
+        left: 1vw;
+        top: 1vh;
+        border-radius: 11px;
+      }
+    
+      h1 {
+        position: relative;
+        width: 28vw;
+        left: 1vw;
+        top: 4vh;
+    
+      }
+    
+      #para{
+        position: relative;
+        width: 25vw;
+        left: 1vw;
+        top: 5vh;
+        word-spacing: 10px;
+        color: rgb(180, 180, 180);
+      }
+    
+      .child3 {
+        position: relative;
+        width: 28vw;
+        left: 1vw;
+        top: 10vh;
+      }
+    
+      .red {
+        position: relative;
+        width: 20vw;
+        top: 6vh;
+        text-align: center;
+        background-color: #EEEEEE;
+        color: black;
+        border-radius: 50px;
+        padding: 9px;
+        border: 2px solid #EEEEEE;
+      }
+    .l{
+      margin: 20px;
+      display: block;
+    }
+    .star {
+      font-size: 5vh;
+      cursor: pointer;
+    }
+     
+    .one {
+      color: rgb(251, 255, 120);
+    }
+     
+    .two {
+      color: rgb(251, 255, 120);
+    }
+     
+    .three {
+      color: rgb(251, 255, 120);
+    }
+     
+    .four {
+      color: rgb(251, 255, 120);
+    }
+     
+    .five {
+      color: rgb(251, 255, 120);
+    }
+    * {
+        margin: 0px;
+        box-sizing: border-box;
+      }
+  
+      body {
+        background-image: url('bg3.jpg');
+      }
+  
+      .container {
+        display: block;
+        align-items: flex-start;
+        padding: 20px;
+      }
+  
+      .photo-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+      }
+  
+      .photo-container img {
+        width: 200px; /* Adjust the size as needed */
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+  
+      .icon-container {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: -25px; /* Adjust the position to overlap the photo */
+      }
+  
+      .links {
+        height: 50px;
+        width: 50px;
+        background-color: #f5f6fa;
+        border-radius: 50px;
+        text-align: center;
+        margin: 10px;
+        box-shadow: 1px 4px 2px 2px #dcdde1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .links i {
+        transition: all 0.3s linear;
+        font-size: 30px;
+        line-height: 50px; /* Center icon vertically */
+      }
+  
+      .links:hover i {
+        transform: scale(1.4);
+      }
+  
+      .fa-linkedin {
+        color: #0097e6;
+      }
+  
+      .fa-instagram {
+        color: #e84393;
+      }
+  
+      .content {
+        margin-top: 40px; /* Add margin to separate from the "About me" section */
+      }
+  
+      .heading {
+        font-family: 'Dancing Script', cursive;
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        margin-bottom: 20px;
+      }
+      ul>li{
+        padding: 5px;
+      }
+}
