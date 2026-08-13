@@ -1,99 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio of Riya</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="port.css">
-  <link rel="stylesheet" href="mobile.css">
-  <style>
-    
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Riya Portfolio</title>
+
+    <link rel="stylesheet" href="riya.css">
 </head>
+
 <body>
-  <div class="title">
-    <span class="TITLE">Riya's Portfolio</span>
-    <button onclick="document.getElementById('aboutme').scrollIntoView({behavior: 'smooth'});">About Me</button>
-    <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'});">Projects</button>
-    <button onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'});">Skills</button>
-    <button onclick="document.getElementById('contacts').scrollIntoView({behavior: 'smooth'});">Contacts</button>
-  </div>
 
-  <div class="container">
-    <div class="photo-container">
-      <img src="RIYA.jpg" alt="Profile Photo">
-      <div class="icon-container">
-        <a class="links" href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a class="links" href="https://www.instagram.com/nagareriyababasaheb?igsh=cmY3a2V0a210ZzVj" target="_blank">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-    <div>
-      <div align="center" id="aboutme" class="heading">About me</div>
-      <p> I am a very enthusiastic and hardworking person with a bit of creativity in me. Currently, I am studying as a sophomore at IIT Gandhinagar as an electrical engineering student. I am interested in digital design as my hobby and pursuing it very enthusiastically. As a first year, I was a junior marketing team member of Amalthea and also a core member of Palette. In the academic area, I got the opportunity to lead a team of 30 people through the world of engineering.</p>
-    </div>
+    <!-- CONTENT -->
+
+    <div class="content-container">
+
+        <section class="page active" id="home">
+            <h1>HELLO!!</h1>
+
+            <p>
+                Welcome to my portfolio website. Feel free to go through it :)
+            </p>
+        </section>
+
+        <section class="page" id="about">
+
+    <h1>ABOUT</h1>
+
+    <div class="about-container">
+
+        <!-- IMAGE -->
+
+        <div class="about-image">
+
+            <img src="Photo.jpeg" alt="Riya">
+
+        </div>
+
+        <!-- TEXT -->
+
+        <div class="about-text">
+
+            <p>
+
+                I am Riya Nagare,
+                a B.Tech Senior Undergraduate
+                in Electrical Engineering
+                at IIT Gandhinagar.
+
+                <br><br>
+
+                I am a curious person who enjoys
+                practically building things in my domain,
+                debugging for hours,
+                and celebrating when finally figuring out
+                where the issue lied.
+
+                <br><br>
+
+                In my free time,
+                I enjoy watching anime,
+                sketching,
+                and spending time with friends and family. 
+                Oh yes! if u want anime recommendations I am open to them :)
+
+                <br><br>
+
+                I love communicating and discussing
+                topics ranging from philosophy,
+                anime and sports
+                to electronics and technology.
+
+            </p>
+
+        </div>
+
     </div>
 
-  <div class="content">
-    <div align="center" id="projects" class="heading">Projects</div>
-    <p>Given below are a few projects done by me. You can get a broad description of them from below. These projects were done in the first year of BTech and were done for the two courses: World of Engineering and Design Innovation and Prototyping.</p>
-    <ol class="lists">
-        <li class="l">
-          <div class="child1">
-            <div class="child2">
-              <img class="image" src="gimbal umbrella.jpg" alt="Gimbal Umbrella">
-              <h1>Gimbal Umbrella</h1>
-              <p class="child3" id="para">This project was done under the WOE course.</p>
-              <div class="child">
-                <a href="https://www.canva.com/design/DAF1Aq5NKJo/P3tyq6vKnuoZVKRMkOEyOg/edit?utm_content=DAF1Aq5NKJo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
-                  <button class="red">Read More</button>
-                </a>
-              </div>
+</section>
+
+       <section class="page" id="projects">
+
+    <h1>PROJECTS</h1>
+
+    <div class="projects-grid">
+
+        <!-- CARD 1 -->
+
+        <div class="project-card"
+            onclick="openProject(0)">
+
+            <img src="speech.jpg">
+
+            <h2>
+                Secure Speech Communication
+            </h2>
+
+            <p>
+                Cross-mobile encrypted audio
+                communication system using
+                MATLAB & Simulink.
+            </p>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="project-card"
+            onclick="openProject(1)">
+
+            <img src="onn.jpg">
+
+            <h2>
+                Oscillatory Neural Network
+            </h2>
+
+            <p>
+                FPGA-based ONN implementation
+                for obstacle avoidance robot.
+            </p>
+
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="project-card"
+            onclick="openProject(2)">
+
+            <img src="umbrella.jpg">
+
+            <h2>
+                Inclusive Umbrella System
+            </h2>
+
+            <p>
+                Assistive umbrella design
+                for wheelchair users.
+            </p>
+
+        </div>
+
+        <!-- CARD 4 -->
+
+        <div class="project-card"
+            onclick="openProject(3)">
+
+            <img src="timer.jpg">
+
+            <h2>
+                Linear Timer Circuit
+            </h2>
+
+            <p>
+                PCB-based auto shutdown
+                timer system.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <section class="page" id="skills">
+            <h1>SKILLS</h1>
+
+            <p>
+                C, C++, MATLAB, Verilog,
+                Signal Processing and DSA.
+            </p>
+        </section>
+
+        <section class="page" id="contact">
+            <h1>CONTACT</h1>
+
+            <p>
+                LinkedIn | GitHub | Instagram
+            </p>
+        </section>
+
+    </div>
+
+
+    <!-- SEMICIRCLE NAVIGATION -->
+
+    <div class="nav-container">
+
+        <div class="semicircle" id="semicircle">
+
+            <div class="label" id="label">
+                HOME
             </div>
-          </div>
-        </li>
-        <li class="l">
-          <div class="child1">
-            <div class="child2">
-              <img class="image" src="cap1.jpg" alt="Alert Guard">
-              <h1>Alert Guard</h1>
-              <p class="child3" id="para">This project was done under the Design course.</p>
-              <div class="child">
-                  <a href="https://www.canva.com/design/DAGLqCUdVoQ/mHEETkM3UdbNKXiFsse7wA/edit?utm_content=DAGLqCUdVoQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
-                      <button class="red">Read More</button>
-                    </a>
-                </div>
-              </div>
-            </div>
-        </li>
-      </ol>
-    <div align="center" id="skills" class="heading card">Skills</div>
-    <ul class="lists">
-      <li>I have nice design skills and can make a fine design using Canva.</li>
-      <li>I am somewhat familiar with web development by making this portfolio.</li>
-      <li>I know basic Python, Java, and C++.</li>
-    </ul>
-    <div id="contacts">
-      <div class="heading" align="center">Contacts</div>
-      <p class="contactsinfo"><i class="fa-solid fa-phone"></i> Phone: +919922531082</p>
-      <span class="contactsinfo"><i class="fa-solid fa-envelope"></i> Email: 23110214@iitgn.ac.in</span>
-      <br />
-      <span onclick="gfg(1)" class="star">★</span>
-      <span onclick="gfg(2)" class="star">★</span>
-      <span onclick="gfg(3)" class="star">★</span>
-      <span onclick="gfg(4)" class="star">★</span>
-      <span onclick="gfg(5)" class="star">★</span>
-      <h3 id="output">Rating is: 0/5</h3>
-    </div>
-  </div>
 
-  <script src="star.js"></script>
+        </div>
+
+    </div>
+
+
+    <!-- CONTROLS -->
+
+    <div class="controls">
+
+        <button onclick="rotateLeft()">
+            ◀
+        </button>
+
+        <button onclick="rotateRight()">
+            ▶
+        </button>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        const tabs = [
+            "home",
+            "about",
+            "projects",
+            "skills",
+            "contact"
+        ];
+
+        let currentIndex = 0;
+
+        let currentRotation = 0;
+
+        const semicircle =
+            document.getElementById("semicircle");
+
+        const label =
+            document.getElementById("label");
+
+        const pages =
+            document.querySelectorAll(".page");
+
+
+        function updateUI() {
+
+            // UPDATE LABEL
+
+            label.innerText =
+                tabs[currentIndex].toUpperCase();
+
+            // SHOW PAGE
+
+            pages.forEach(page => {
+                page.classList.remove("active");
+            });
+
+            document.getElementById(
+                tabs[currentIndex]
+            ).classList.add("active");
+
+        }
+
+
+        function rotateRight() {
+
+            currentIndex++;
+
+            if(currentIndex >= tabs.length){
+                currentIndex = 0;
+            }
+
+            currentRotation += 360;
+
+            semicircle.style.transform =
+                `rotate(${currentRotation}deg)`;
+
+            setTimeout(() => {
+
+                label.style.transform =
+                    `rotate(${-currentRotation}deg)`;
+
+                updateUI();
+
+            }, 500);
+        }
+
+
+        function rotateLeft() {
+
+            currentIndex--;
+
+            if(currentIndex < 0){
+                currentIndex = tabs.length - 1;
+            }
+
+            currentRotation -= 360;
+
+            semicircle.style.transform =
+                `rotate(${currentRotation}deg)`;
+
+            setTimeout(() => {
+
+                label.style.transform =
+                    `rotate(${-currentRotation}deg)`;
+
+                updateUI();
+
+            }, 500);
+        }
+        
+
+    </script>
+<!-- PROJECT MODAL -->
+
+<div class="project-modal" id="projectModal">
+
+    <div class="modal-content">
+
+        <span class="close-btn"
+            onclick="closeProject()">
+            ✖
+        </span>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+    </div>
+
+</div>
 </body>
+
 </html>
