@@ -1,30 +1,87 @@
-// script.js
+<script>
 
-// To access the stars
-let stars = 
-	document.getElementsByClassName("star");
-let output = 
-	document.getElementById("output");
+    const tabs = [
+        "home",
+        "about",
+        "projects",
+        "skills",
+        "contact"
+    ];
 
-// Funtion to update rating
-function gfg(n) {
-	remove();
-	for (let i = 0; i < n; i++) {
-		if (n == 1) cls = "one";
-		else if (n == 2) cls = "two";
-		else if (n == 3) cls = "three";
-		else if (n == 4) cls = "four";
-		else if (n == 5) cls = "five";
-		stars[i].className = "star " + cls;
-	}
-	output.innerText = "Rating is: " + n + "/5";
-}
+    let currentIndex = 0;
 
-// To remove the pre-applied styling
-function remove() {
-	let i = 0;
-	while (i < 5) {
-		stars[i].className = "star";
-		i++;
-	}
-}
+    // GET ELEMENTS
+
+    const orbit =
+        document.getElementById("orbit");
+
+    const selectedCircle =
+        document.getElementById("selectedCircle");
+
+    const pages =
+        document.querySelectorAll(".page");
+
+
+    // MAIN FUNCTION
+
+    function updateUI() {
+
+        // UPDATE TEXT
+
+        selectedCircle.innerText =
+            tabs[currentIndex].toUpperCase();
+
+        // HIDE ALL PAGES
+
+        pages.forEach(page => {
+            page.classList.remove("active");
+        });
+
+        // SHOW CURRENT PAGE
+
+        document.getElementById(
+            tabs[currentIndex]
+        ).classList.add("active");
+
+        // ROTATE ORBIT
+
+        let angle = currentIndex * 72;
+
+        orbit.style.transform =
+            `rotate(${angle}deg)`;
+    }
+
+
+    // RIGHT ROTATION
+
+    function rotateRight() {
+
+        currentIndex++;
+
+        if (currentIndex >= tabs.length) {
+            currentIndex = 0;
+        }
+
+        updateUI();
+    }
+
+
+    // LEFT ROTATION
+
+    function rotateLeft() {
+
+        currentIndex--;
+
+        if (currentIndex < 0) {
+            currentIndex = tabs.length - 1;
+        }
+
+        updateUI();
+    }
+
+
+    // INITIAL START
+
+    updateUI();
+
+</script>
