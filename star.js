@@ -81,7 +81,24 @@
 
 
     // INITIAL START
+    // OPEN PROJECT LINK IN NEW TAB
+
+    function openProject(url) {
+    if (url && url !== '') {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+        if (newWindow) {
+            newWindow.focus();
+        } else {
+            // Fallback if browser blocks popups
+            window.location.href = url;
+        }
+    }
+}
+
+
+    // INITIAL START
 
     updateUI();
+
 
 </script>
