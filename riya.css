@@ -353,15 +353,11 @@ body::after{
 /* IMAGES */
 
 .project-card img {
-
     width: 100%;
-
     height: 220px;
-
-    object-fit: cover;
-
-    background: rgba(0, 255, 255, 0.05); /* Soft placeholder background */
-
+    object-fit: contain; /* Shrinks the full PNG to fit inside without cropping */
+    padding: 15px;       /* Adds space around your image so it doesn't hit the borders */
+    background: rgba(0, 255, 255, 0.03); /* Soft background to fill transparent areas */
     display: block;
 }
 
