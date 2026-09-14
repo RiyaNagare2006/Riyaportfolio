@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Riya Portfolio</title>
+
+    <link rel="stylesheet" href="riya.css">
+</head>
+
+<body>
+
+    <!-- CONTENT -->
+
+    <div class="content-container">
+
+        <section class="page active" id="home">
+            <h1>HELLO!!</h1>
+
+            <p>
+                Welcome to my portfolio website. Feel free to go through it :)
+            </p>
+        </section>
+
+        <section class="page" id="about">
+
+    <h1>ABOUT</h1>
+
+    <div class="about-container">
+
+        <!-- IMAGE -->
+
+        <div class="about-image">
+
+            <img src="Photo.jpeg" alt="Riya">
+
+        </div>
+
+        <!-- TEXT -->
+
+        <div class="about-text">
+
+            <p>
+
+                I am Riya Nagare,
+                a B.Tech Senior Undergraduate
+                in Electrical Engineering
+                at IIT Gandhinagar.
+
+                <br><br>
+
+                I am a curious person who enjoys
+                practically building things in my domain,
+                debugging for hours,
+                and celebrating when finally figuring out
+                where the issue lied.
+
+                <br><br>
+
+                In my free time,
+                I enjoy watching anime,
+                sketching,
+                and spending time with friends and family. 
+                Oh yes! if u want anime recommendations I am open to them :)
+
+                <br><br>
+
+                I love communicating and discussing
+                topics ranging from philosophy,
+                anime and sports
+                to electronics and technology.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+       <section class="page" id="projects">
+
+    <h1>PROJECTS</h1>
+
+    <div class="projects-grid">
+
+        <!-- CARD 1 -->
+
+        <a href="https://github.com/RiyaNagare2006/Secure-and-Intelligent-Speech-Communication-over-Wi-Fi-" target="_blank" rel="noopener noreferrer" class="project-card-link">
+            <div class="project-card">
+                <img src="speech.png">
+                <h2>Secure Speech Communication</h2>
+                <p>
+                    Cross-mobile encrypted audio
+                    communication system using
+                    MATLAB & Simulink.
+                </p>
+            </div>
+        </a>
+
+        <!-- CARD 2 -->
+        <a href="https://github.com/RiyaNagare2006/Oscillatory_Neural_Network_Implementation" target="_blank" rel="noopener noreferrer" class="project-card-link">
+            <div class="project-card"
+                onclick="openProject(1)">
+
+                <img src="ONN.png">
+
+                <h2>
+                    Oscillatory Neural Network Implementation
+                </h2>
+
+                <p>
+                    FPGA-based ONN implementation
+                    for obstacle avoidance function.
+                </p>
+
+            </div>
+        </a>
+
+        <!-- CARD 3 -->
+        <a href="https://onedrive.live.com/:p:/g/personal/440b35462abe3126/IQCDlzCJQPUUQYMe06dmwhT5Ab0sRqu-3gR6f6l0vIJYGzw?rtime=9hJRBjcS30g&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3AvYy80NDBiMzU0NjJhYmUzMTI2L0VZT1hNSWxBOVJSQmd4N1RwMmJDRlBrQnZTeEdxNzdlQkhwX3FYUzhnbGdiUEE_ZT1yUWhLZlI" target="_blank" rel="noopener noreferrer" class="project-card-link">
+            <div class="project-card"
+                onclick="openProject(2)">
+
+                <img src="umbrella.png">
+
+                <h2>
+                    Inclusive Umbrella System
+                </h2>
+
+                <p>
+                    Assistive umbrella design
+                    for wheelchair users.
+                </p>
+
+            </div>
+        </a>
+
+        <!-- CARD 4 -->
+        <a href="https://github.com/RiyaNagare2006/Smart-Cafe-Navigation-Robot" target="_blank" rel="noopener noreferrer" class="project-card-link">
+            <div class="project-card"
+                onclick="openProject(3)">
+
+                <img src="robot.png">
+
+                <h2>
+                    Smart Cafe Navigation Robot
+                </h2>
+
+                <p>
+                    Navigates the cafe as specified in the given command.
+                </p>
+
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+        <section class="page" id="skills">
+            <h1>SKILLS</h1>
+
+            <p>
+                C, C++, MATLAB, Verilog,
+                Signal Processing and DSA.
+            </p>
+        </section>
+
+        <section class="page" id="contact">
+            <h1>CONTACT</h1>
+
+            <p class="contact-links">
+                <a href="https://www.linkedin.com/in/riya-nagare-95408628b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <span class="separator">|</span>
+                <a href="https://github.com/RiyaNagare2006" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <span class="separator">|</span>
+                <a href="https://www.instagram.com/nagareriya_rbn" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </p>
+        </section>
+
+    </div>
+
+
+    <!-- SEMICIRCLE NAVIGATION -->
+
+    <div class="nav-container">
+
+        <div class="semicircle" id="semicircle">
+
+            <div class="label" id="label">
+                HOME
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CONTROLS -->
+
+    <div class="controls">
+
+        <button onclick="rotateLeft()">
+            ◀
+        </button>
+
+        <button onclick="rotateRight()">
+            ▶
+        </button>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        const tabs = [
+            "home",
+            "about",
+            "projects",
+            "skills",
+            "contact"
+        ];
+
+        let currentIndex = 0;
+
+        let currentRotation = 0;
+
+        const semicircle =
+            document.getElementById("semicircle");
+
+        const label =
+            document.getElementById("label");
+
+        const pages =
+            document.querySelectorAll(".page");
+
+
+        function updateUI() {
+
+            // UPDATE LABEL
+
+            label.innerText =
+                tabs[currentIndex].toUpperCase();
+
+            // SHOW PAGE
+
+            pages.forEach(page => {
+                page.classList.remove("active");
+            });
+
+            document.getElementById(
+                tabs[currentIndex]
+            ).classList.add("active");
+
+        }
+
+
+        function rotateRight() {
+
+            currentIndex++;
+
+            if(currentIndex >= tabs.length){
+                currentIndex = 0;
+            }
+
+            currentRotation += 360;
+
+            semicircle.style.transform =
+                `rotate(${currentRotation}deg)`;
+
+            setTimeout(() => {
+
+                label.style.transform =
+                    `rotate(${-currentRotation}deg)`;
+
+                updateUI();
+
+            }, 500);
+        }
+
+
+        function rotateLeft() {
+
+            currentIndex--;
+
+            if(currentIndex < 0){
+                currentIndex = tabs.length - 1;
+            }
+
+            currentRotation -= 360;
+
+            semicircle.style.transform =
+                `rotate(${currentRotation}deg)`;
+
+            setTimeout(() => {
+
+                label.style.transform =
+                    `rotate(${-currentRotation}deg)`;
+
+                updateUI();
+
+            }, 500);
+        }
+        
+
+    </script>
+<!-- PROJECT MODAL -->
+
+<div class="project-modal" id="projectModal">
+
+    <div class="modal-content">
+
+        <span class="close-btn"
+            onclick="closeProject()">
+            ✖
+        </span>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+    </div>
+
+</div>
+</body>
+
+</html>>
